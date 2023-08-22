@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Header from "@/components/header/Header";
+import Image from "next/image";
 
 const hotelType = [
   "Hotel",
@@ -30,11 +31,7 @@ export default function Home() {
           <p className=" text-base14 text-txt-primary_light px-4">
             12 USD - 1987 USD Per Night
           </p>
-          <img
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-            alt=""
-            className="h-[200px] w-[95%]"
-          />
+          <Image src="/hotel.jpeg" alt="" width={400} height={100} />
           {/* type */}
           <div className=" flex justify-between items-center border-b-[1px] bg-bg-semiwhite pl-4 pr-[11px] py-2">
             <p className=" text-base18 font-medium text-txt-primary ">Type</p>
