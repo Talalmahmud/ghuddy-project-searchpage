@@ -41,11 +41,11 @@ const Header = () => {
           We are go?
         </button>
       </div>
-      <div className="flex items-center gap-2 ">
+      <div className="flex lg:hidden items-center gap-2 ">
         <div className=" h-[44px] w-[222px] flex items-center text-base14 rounded-[70px] border-[1px] border-txt-primary_light">
           <button className=" h-full w-[105px]">Check In</button>
           <div className="w-[1px] h-[35px] bg-btn-secondary"></div>
-          <button className=" h-full w-[105px]">Check In</button>
+          <button className=" h-full w-[105px]">Check Out</button>
         </div>
         <button className=" h-[44px] w-[144px] flex justify-center items-center text-base14 rounded-[70px] border-[1px] border-txt-primary_light">
           Guest
