@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ButtonLeft from "./ButtonLeft";
 import ButtonMiddle from "./ButtonMiddle";

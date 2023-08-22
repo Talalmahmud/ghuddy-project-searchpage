@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import HeaderTop from "./HeaderTop";
 import HeaderMiddle from "./middle/HeaderMiddle";
