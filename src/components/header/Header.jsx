@@ -7,12 +7,13 @@ import ButtonLeft from "./middle/ButtonLeft";
 import ButtonGo from "./middle/ButtonGo";
 import ButtonMiddle from "./middle/ButtonMiddle";
 import ButtonGuest from "./middle/ButtonGuest";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <>
       <HeaderTop />
-      <div className=" flex flex-row h-[44px] gap-2 items-center">
+      <div className=" flex flex-row h-[44px] gap-[8px] items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"
@@ -41,19 +42,37 @@ const Header = () => {
           We are go?
         </button>
       </div>
-      <div className="flex lg:hidden items-center gap-2 ">
-        <div className=" h-[44px] w-[222px] flex items-center text-base14 rounded-[70px] border-[1px] border-txt-primary_light">
-          <button className=" h-full w-[105px]">Check In</button>
-          <div className="w-[1px] h-[35px] bg-btn-secondary"></div>
-          <button className=" h-full w-[105px]">Check Out</button>
+      <div className="flex lg:hidden items-center gap-[8px] mt-[16px] ">
+        <div className=" h-[44px] w-[222px] flex items-center text-base14 rounded-[70px] border-[1px] border-bg-bg_light_secondary">
+          <button className=" h-full w-[105px] px-2">Check In</button>
+          <div className="w-[1px] h-[24px] bg-btn-secondary"></div>
+          <button className=" h-full w-[105px] px-2">Check Out</button>
         </div>
-        <button className=" h-[44px] w-[144px] flex justify-center items-center text-base14 rounded-[70px] border-[1px] border-txt-primary_light">
+        <button className=" h-[44px] w-[113px] px-2 flex justify-center items-center text-base14 rounded-[70px] border-[1px] border-txt-primary_light">
           Guest
         </button>
       </div>
 
-      <HeaderBottom />
-      <div className=" flex flex-row gap-2 items-center">
+      <div className=" hidden lg:block">
+        <HeaderBottom />
+      </div>
+      {/* mobile view */}
+      <div className=" flex items-center gap-x-[16px] my-[16px] lg:hidden">
+        <button className=" h-[32px] py-[12px] w-[103.66px] text-base14 px-[32px] text-btn-secondary flex items-center justify-center gap-x-[8px] border-[1px] border-btn-secondary rounded-[70px]">
+          <Image src="./assets/filter.svg" alt="" height={12} width={12} />
+          <p className=" text-base14">Filter</p>
+        </button>
+        <button className=" h-[32px] py-[12px] w-[103.66px] text-base14 px-[32px] text-btn-secondary flex items-center justify-center gap-x-[8px] border-[1px] border-btn-secondary rounded-[70px]">
+          <Image src="./assets/sort.svg" alt="" height={12} width={12} />
+          <p className=" text-base14">Sort By</p>
+        </button>
+        <button className=" h-[32px] py-[12px] w-[103.66px] text-base14 px-[32px] text-btn-secondary flex items-center justify-center gap-x-[8px] border-[1px] border-btn-secondary rounded-[70px]">
+          <Image src="./assets/map.svg" alt="" height={12} width={12} />
+          <p className=" text-base14">Map</p>
+        </button>
+      </div>
+
+      <div className="hidden lg:flex flex-row gap-2 items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"

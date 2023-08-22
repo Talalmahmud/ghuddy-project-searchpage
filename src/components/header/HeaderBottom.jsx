@@ -4,7 +4,7 @@ import React from "react";
 
 const HeaderBottom = () => {
   return (
-    <div className=" flex items-start gap-x-4 my-6">
+    <div className=" flex items-start gap-x-[16px] my-[24px]">
       <button className=" h-[36px] w-[224px] gap-x-2 text-btn-secondary flex justify-center items-center  border-[1px] border-btn-secondary rounded-[70px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
