@@ -9,13 +9,13 @@ import Image from "next/image";
 const Card = ({ item }) => {
   return (
     <>
-      <div className="h-[152px] w-[677px] flex bg-bg-primary gap-[] rounded-md hover:shadow-cardShadow">
+      <div className=" h-[325px] lg:h-[152px] w-full lg:w-[677px] flex flex-col lg:flex-row bg-bg-primary rounded-md hover:shadow-cardShadow">
         {/* Card image sliding section */}
         <CardSlider images={item.images} />
 
-        <div className=" flex w-[387px] flex-col gap-[6px] p-[12px] h-full ">
+        <div className=" flex w-[343px] lg:w-[387px] flex-col gap-[6px] p-[12px] h-[152px] ">
           {/*title */}
-          <div className=" flex h-[22px] w-full  justify-between items-center  px-2 py-2">
+          <div className=" flex h-[22px] w-full  justify-between items-center  py-[8px]">
             <p className=" w-[305px]  text-base16 font-medium text-txt-primary whitespace-normal block">
               {item.property_name.slice(0, 30)}
             </p>
@@ -31,7 +31,7 @@ const Card = ({ item }) => {
 
           {/* address */}
           <div className=" flex items-center h-[20px] gap-x-[4px] mt-[6px]">
-            <Image src="./assets/location.svg" height={14} width={14} />
+            <Image src="./assets/location.svg" height={14} width={14} alt="" />
             <p className="text-[12px] text-start text-textColor font-normal whitespace-normal block">
               {item.short_address.slice(0, 30)}
             </p>
@@ -39,14 +39,14 @@ const Card = ({ item }) => {
 
           {/* tag */}
           <div className=" flex items-start h-[40px] gap-x-[4px] mt-[12px]">
-            <Image src="./assets/home.svg" height={14} width={14} />
+            <Image src="./assets/home.svg" height={14} width={14} alt="" />
             <p className="text-[12px] w-[345px] h-[40px] text-start text-textColor font-normal whitespace-normal block">
               {item.property_tag.slice(0, 80)}
             </p>
           </div>
 
           {/* checkout */}
-          <div className=" flex items-center flex-row mt-2">
+          <div className=" flex justify-center lg:justify-start items-center flex-row">
             <p className=" text-base12 font-normal mr-[2px]">Checkout Price:</p>
 
             <p className=" text-base14">{item.property_price}</p>

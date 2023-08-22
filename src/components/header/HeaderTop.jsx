@@ -4,7 +4,7 @@ import React from "react";
 
 const HeaderTop = () => {
   return (
-    <div className=" flex items-center justify-between py-[16px] lg:py-[24px] text-txt-primary_light">
+    <div className=" flex items-center justify-between pt-[32px] lg:py-[24px] text-txt-primary_light">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"

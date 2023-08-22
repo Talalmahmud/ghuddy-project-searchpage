@@ -20,20 +20,19 @@ export default function Home() {
     const fetchData = async () => {
       const res = await fetch("https://dev.ghuddy.link/api/v1/open/hotels");
       const resData = await res.json();
-      console.log(resData);
       setContent(resData.esHotelCardList);
     };
     fetchData();
   }, []);
 
   return (
-    <main className=" px-4 lg:px-[170px]">
+    <main className=" px-[14px] lg:px-[170px]">
       <Header />
       <div className=" py-[24px] flex flex-row bg-bg-semiwhite">
         <BodyLeft />
 
         {/* card */}
-        <div className=" pl-[48px] flex flex-col gap-y-[24px]">
+        <div className=" pl-[0px] lg:pl-[48px] flex flex-col gap-y-[24px]">
           {content.length !== 0 ? (
             content.map((item, index) => <Card key={index} item={item} />)
           ) : (

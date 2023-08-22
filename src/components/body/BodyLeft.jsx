@@ -18,7 +18,7 @@ const BodyLeft = () => {
   const [showHotel, setShowHotel] = useState(true);
   const hotelShowChange = () => [setShowHotel(!showHotel)];
   return (
-    <div className="w-[365px]">
+    <div className="w-[365px] hidden lg:block">
       <p className=" text-base14 font-medium text-txt-primary_light">
         12 USD - 1987 USD Per Night
       </p>

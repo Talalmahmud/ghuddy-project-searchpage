@@ -26,22 +26,24 @@ const CardImageSlider = ({ images }) => {
   };
   return (
     <>
-      <div className=" relative h-[152px] w-[290px] ">
-        <Image
-          src={images[currentIndex]}
-          width={290}
-          height={152}
-          className="rounded-tl-md w-[290px] h-[152px] rounded-bl-md transition-all ease-out object-cover"
-          alt=""
-        />
-        <div className=" absolute top-[14px] left-0 text-txt-secondary bg-btn-red h-[21px] text-[12px] w-[132px] ">
+      <div className=" relative h-[152px] w-[343px] lg:w-[290px] ">
+        <div>
+          {" "}
+          <Image
+            src={images[currentIndex]}
+            fill
+            className="rounded-tl-md w-full h-[186px] lg:h-[152px] rounded-tr-md lg:rounded-bl-md  transition-all ease-out object-cover"
+            alt=""
+          />
+        </div>
+        <div className=" absolute top-[14px] left-0 text-txt-secondary bg-btn-red h-[21px] text-base12 pl-[8px] w-[132px] ">
           <div className="flex h-full w-full  justify-between items-center px-2 hover:fill-white">
             <div className=" text-white">
               <IoDiamondOutline size={14} />
             </div>
-            <p className=" text-white text-[12px] font-semibold">24% off</p>
+            <p className=" text-white text-base12 font-medium">24% off</p>
             <div className=" flex justify-center items-center">
-              <button className=" bg-bg-primary text-[12px] px-1  text-btn-red rounded-sm border-1 font-semibold">
+              <button className=" bg-bg-primary text-[12px] px-1  text-btn-red rounded-[2.9393px] border-1 font-semibold">
                 Deal!!
               </button>
             </div>
