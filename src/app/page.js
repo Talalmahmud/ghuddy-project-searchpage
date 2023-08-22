@@ -54,7 +54,7 @@ export default function Home() {
           {showHotel && (
             <div className=" pl-4 py-2">
               {hotelType.map((item, index) => (
-                <div className=" flex items-center pl-2">
+                <div className=" flex items-center pl-2" key={index}>
                   <input type="checkbox" name={item} className="" />
                   <p className=" pl-2 text-base16 font-normal">{item}</p>
                 </div>
@@ -131,7 +131,7 @@ export default function Home() {
           {/* mobility list */}
           <div className=" pl-4 py-2">
             {mobilityList.map((item, index) => (
-              <div className=" flex items-center pl-2">
+              <div className=" flex items-center pl-2" key={index}>
                 <input type="checkbox" name={item} />
                 <p className=" pl-2 text-base16 font-normal">{item}</p>
               </div>
@@ -162,7 +162,7 @@ export default function Home() {
           <div className=" pl-2">
             <div className=" pl-4 flex gap-x-2 py-2">
               {mobilityList.map((item, index) => (
-                <div className="">
+                <div className="" key={index}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
@@ -180,7 +180,7 @@ export default function Home() {
             </div>
             <div className=" pl-4 flex gap-x-2 py-2">
               {mobilityList.map((item, index) => (
-                <div className="">
+                <div className="" key={index}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
@@ -198,7 +198,7 @@ export default function Home() {
             </div>
             <div className=" pl-4 flex gap-x-2 py-2">
               {mobilityList.map((item, index) => (
-                <div className="">
+                <div className="" key={index}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
@@ -239,7 +239,7 @@ export default function Home() {
           {/* amnities list */}
           <div className=" pl-4 py-2">
             {mobilityList.map((item, index) => (
-              <div className=" flex items-center pl-2">
+              <div className=" flex items-center pl-2" key={index}>
                 <input type="checkbox" name={item} />
                 <p className=" pl-2 text-base16 font-normal">{item}</p>
               </div>
@@ -269,7 +269,7 @@ export default function Home() {
           {/* services list */}
           <div className=" pl-4 py-2">
             {mobilityList.map((item, index) => (
-              <div className=" pl-2 flex items-center">
+              <div className=" pl-2 flex items-center" key={index}>
                 <input type="checkbox" name={item} />
                 <p className=" pl-2 text-base16 font-normal">{item}</p>
               </div>
