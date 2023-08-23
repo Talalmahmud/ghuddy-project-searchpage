@@ -5,6 +5,8 @@ import Image from "next/image";
 import Card from "@/components/card/Card";
 import Slider from "@/components/Slider";
 import BodyLeft from "@/components/body/BodyLeft";
+import InputButton from "@/components/buttons/InputButton";
+import GoButton from "@/components/buttons/GoButton";
 
 export default function Home() {
   const [showHotel, setShowHotel] = useState(true);
@@ -26,22 +28,29 @@ export default function Home() {
   }, []);
 
   return (
-    <main className=" px-[14px] lg:px-[170px]">
-      <Header />
-      <div className=" py-[24px] flex flex-row bg-bg-semiwhite">
-        <BodyLeft />
+    <main className="">
+      <div className="w-full">
+        <div className="">
+          <div className="xl:max-w-[1100px] md:max-w-[765px] md:px-[16px] max-w-[343px] px-[0px] xl:px-[0px] h-[300px] bg-bg-white mx-auto">
+            <Header />
+            <div className=" py-[24px] flex flex-row bg-bg-semiwhite">
+              <BodyLeft />
 
-        {/* card */}
-        <div className=" pl-[0px] lg:pl-[48px] flex flex-col gap-y-[24px]">
-          {content.length !== 0 ? (
-            content.map((item, index) => <Card key={index} item={item} />)
-          ) : (
-            <h2 className=" h-[200px] text-lg font-semibold w-full flex justify-center items-center">
-              ..........Nothing to find..........
-            </h2>
-          )}
+              {/* card */}
+              <div className=" pl-[0px] lg:pl-[48px] flex flex-col gap-y-[24px]">
+                {content.length !== 0 ? (
+                  content.map((item, index) => <Card key={index} item={item} />)
+                ) : (
+                  <h2 className=" h-[200px] text-lg font-semibold w-full flex justify-center items-center">
+                    ..........Nothing to find..........
+                  </h2>
+                )}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       {/* <Slider /> */}
     </main>
   );
