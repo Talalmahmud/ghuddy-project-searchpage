@@ -18,11 +18,11 @@ const BodyLeft = () => {
   const [showHotel, setShowHotel] = useState(true);
   const hotelShowChange = () => [setShowHotel(!showHotel)];
   return (
-    <div className="w-[365px] hidden lg:block">
+    <div className="xl:w-[365px] md:w-[202px] hidden md:block">
       <p className=" text-base14 font-medium text-txt-primary_light">
         12 USD - 1987 USD Per Night
       </p>
-      <Image src="/hotel.jpeg" alt="" width={400} height={100} />
+      <Image src="/assets/hotel.jpg" alt="" width={400} height={100} />
       {/* type */}
       <div className=" h-[44px] w-full flex justify-between items-center border-b-[1px] border-txt-dotted pl-[16px] pr-[11px] py-2">
         <p className=" text-base18 font-medium text-txt-primary ">Type</p>
@@ -93,20 +93,12 @@ const BodyLeft = () => {
       {/* mobility */}
       <div className=" flex justify-between items-center border-b-[1px] border-txt-dotted pl-[16px] pr-[11px] py-[8px]">
         <p className=" text-base18 font-medium text-txt-primary ">Mobility</p>
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="25"
-            viewBox="0 0 24 25"
-            fill="none"
-          >
-            <path
-              d="M14.1192 16.1247L18.7092 11.5347C18.8955 11.3473 19 11.0938 19 10.8297C19 10.5655 18.8955 10.312 18.7092 10.1247C18.6162 10.0309 18.5056 9.95653 18.3838 9.90576C18.2619 9.855 18.1312 9.82886 17.9992 9.82886C17.8672 9.82886 17.7365 9.855 17.6146 9.90576C17.4928 9.95653 17.3822 10.0309 17.2892 10.1247L12.7092 14.7247C12.6162 14.8184 12.5056 14.8928 12.3838 14.9435C12.2619 14.9943 12.1312 15.0205 11.9992 15.0205C11.8672 15.0205 11.7365 14.9943 11.6146 14.9435C11.4928 14.8928 11.3822 14.8184 11.2892 14.7247L6.7092 10.1247C6.52223 9.93635 6.26811 9.83004 6.00274 9.8291C5.73738 9.82816 5.48251 9.93268 5.29421 10.1197C5.1059 10.3066 4.99959 10.5608 4.99865 10.8261C4.99771 11.0915 5.10223 11.3464 5.28921 11.5347L9.87921 16.1247C10.4417 16.6865 11.2042 17.002 11.9992 17.002C12.7942 17.002 13.5567 16.6865 14.1192 16.1247Z"
-              fill="#879FA8"
-            />
-          </svg>
-        </div>
+        <Image
+          src="./assets/fi-rr-angle-small-right.svg"
+          height={24}
+          width={24}
+          alt=""
+        />
       </div>
       {/* mobility list */}
       <div className=" pl-4 py-2">
@@ -118,26 +110,18 @@ const BodyLeft = () => {
         ))}
       </div>
 
-      {/* mobility */}
-      <div className=" flex justify-between items-center border-b-[1px] border-txt-dotted pl-[16px] py-2">
+      {/* Reviews */}
+      <div className=" flex justify-between items-center border-b-[1px] border-txt-dotted pl-[16px] pr-[11px] py-[8px]">
         <p className=" text-base18 font-medium text-txt-primary ">Reviews</p>
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="25"
-            viewBox="0 0 24 25"
-            fill="none"
-          >
-            <path
-              d="M14.1192 16.1247L18.7092 11.5347C18.8955 11.3473 19 11.0938 19 10.8297C19 10.5655 18.8955 10.312 18.7092 10.1247C18.6162 10.0309 18.5056 9.95653 18.3838 9.90576C18.2619 9.855 18.1312 9.82886 17.9992 9.82886C17.8672 9.82886 17.7365 9.855 17.6146 9.90576C17.4928 9.95653 17.3822 10.0309 17.2892 10.1247L12.7092 14.7247C12.6162 14.8184 12.5056 14.8928 12.3838 14.9435C12.2619 14.9943 12.1312 15.0205 11.9992 15.0205C11.8672 15.0205 11.7365 14.9943 11.6146 14.9435C11.4928 14.8928 11.3822 14.8184 11.2892 14.7247L6.7092 10.1247C6.52223 9.93635 6.26811 9.83004 6.00274 9.8291C5.73738 9.82816 5.48251 9.93268 5.29421 10.1197C5.1059 10.3066 4.99959 10.5608 4.99865 10.8261C4.99771 11.0915 5.10223 11.3464 5.28921 11.5347L9.87921 16.1247C10.4417 16.6865 11.2042 17.002 11.9992 17.002C12.7942 17.002 13.5567 16.6865 14.1192 16.1247Z"
-              fill="#879FA8"
-            />
-          </svg>
-        </div>
+        <Image
+          src="./assets/fi-rr-angle-small-right.svg"
+          height={24}
+          width={24}
+          alt=""
+        />
       </div>
       {/* Reviews list */}
-      <div className=" pl-[16px]">
+      <div className=" px-[16px]">
         <div className="flex gap-x-[8px] py-[8px]">
           {mobilityList.map((item, index) => (
             <div className="" key={index}>
@@ -197,20 +181,12 @@ const BodyLeft = () => {
       {/* Amneties */}
       <div className=" flex justify-between items-center border-b-[1px] border-txt-dotted pl-[16px] pr-[11px] py-[8px]">
         <p className=" text-base18 font-medium text-txt-primary ">Amneties</p>
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="25"
-            viewBox="0 0 24 25"
-            fill="none"
-          >
-            <path
-              d="M14.1192 16.1247L18.7092 11.5347C18.8955 11.3473 19 11.0938 19 10.8297C19 10.5655 18.8955 10.312 18.7092 10.1247C18.6162 10.0309 18.5056 9.95653 18.3838 9.90576C18.2619 9.855 18.1312 9.82886 17.9992 9.82886C17.8672 9.82886 17.7365 9.855 17.6146 9.90576C17.4928 9.95653 17.3822 10.0309 17.2892 10.1247L12.7092 14.7247C12.6162 14.8184 12.5056 14.8928 12.3838 14.9435C12.2619 14.9943 12.1312 15.0205 11.9992 15.0205C11.8672 15.0205 11.7365 14.9943 11.6146 14.9435C11.4928 14.8928 11.3822 14.8184 11.2892 14.7247L6.7092 10.1247C6.52223 9.93635 6.26811 9.83004 6.00274 9.8291C5.73738 9.82816 5.48251 9.93268 5.29421 10.1197C5.1059 10.3066 4.99959 10.5608 4.99865 10.8261C4.99771 11.0915 5.10223 11.3464 5.28921 11.5347L9.87921 16.1247C10.4417 16.6865 11.2042 17.002 11.9992 17.002C12.7942 17.002 13.5567 16.6865 14.1192 16.1247Z"
-              fill="#879FA8"
-            />
-          </svg>
-        </div>
+        <Image
+          src="./assets/fi-rr-angle-small-right.svg"
+          height={24}
+          width={24}
+          alt=""
+        />
       </div>
       {/* amnities list */}
       <div className=" pl-[16px] py-[8px]">
@@ -225,20 +201,12 @@ const BodyLeft = () => {
       {/* Services */}
       <div className=" flex justify-between items-center border-b-[1px] border-txt-dotted pl-[16px] pr-[11px] py-[8px]">
         <p className=" text-base18 font-medium text-txt-primary ">Services</p>
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="25"
-            viewBox="0 0 24 25"
-            fill="none"
-          >
-            <path
-              d="M14.1192 16.1247L18.7092 11.5347C18.8955 11.3473 19 11.0938 19 10.8297C19 10.5655 18.8955 10.312 18.7092 10.1247C18.6162 10.0309 18.5056 9.95653 18.3838 9.90576C18.2619 9.855 18.1312 9.82886 17.9992 9.82886C17.8672 9.82886 17.7365 9.855 17.6146 9.90576C17.4928 9.95653 17.3822 10.0309 17.2892 10.1247L12.7092 14.7247C12.6162 14.8184 12.5056 14.8928 12.3838 14.9435C12.2619 14.9943 12.1312 15.0205 11.9992 15.0205C11.8672 15.0205 11.7365 14.9943 11.6146 14.9435C11.4928 14.8928 11.3822 14.8184 11.2892 14.7247L6.7092 10.1247C6.52223 9.93635 6.26811 9.83004 6.00274 9.8291C5.73738 9.82816 5.48251 9.93268 5.29421 10.1197C5.1059 10.3066 4.99959 10.5608 4.99865 10.8261C4.99771 11.0915 5.10223 11.3464 5.28921 11.5347L9.87921 16.1247C10.4417 16.6865 11.2042 17.002 11.9992 17.002C12.7942 17.002 13.5567 16.6865 14.1192 16.1247Z"
-              fill="#879FA8"
-            />
-          </svg>
-        </div>
+        <Image
+          src="./assets/fi-rr-angle-small-right.svg"
+          height={24}
+          width={24}
+          alt=""
+        />
       </div>
       {/* services list */}
       <div className=" pl-[16px] py-[8px]">

@@ -1,12 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import Header from "@/components/header/Header";
-import Image from "next/image";
 import Card from "@/components/card/Card";
-import Slider from "@/components/Slider";
 import BodyLeft from "@/components/body/BodyLeft";
-import InputButton from "@/components/buttons/InputButton";
 import GoButton from "@/components/buttons/GoButton";
+import MiddleButton2 from "@/components/header/MiddleButton";
 
 export default function Home() {
   const [showHotel, setShowHotel] = useState(true);
@@ -32,12 +30,11 @@ export default function Home() {
       <div className="w-full">
         <div className="">
           <div className="xl:max-w-[1100px] md:max-w-[765px] md:px-[16px] max-w-[343px] px-[0px] xl:px-[0px] h-[300px] bg-bg-white mx-auto">
-            <Header />
             <div className=" py-[24px] flex flex-row bg-bg-semiwhite">
               <BodyLeft />
 
               {/* card */}
-              <div className=" pl-[0px] lg:pl-[48px] flex flex-col gap-y-[24px]">
+              <div className=" pl-[0px] md:pl-[48px] flex flex-col gap-y-[24px]">
                 {content.length !== 0 ? (
                   content.map((item, index) => <Card key={index} item={item} />)
                 ) : (

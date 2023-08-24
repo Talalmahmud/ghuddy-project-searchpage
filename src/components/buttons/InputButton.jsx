@@ -5,8 +5,8 @@ const InputButton = ({ title, btnWidth }) => {
     <>
       <input
         className={
-          " flex justify-center items-center px-[32px] h-[44px] rounded-[48px] placeholder-bg-white border-bg-white bg-btn-secondary text-center outline-none  text-base16 " +
-          `${btnWidth}`
+          " flex justify-center items-center px-[32px] w-full h-[44px] rounded-[48px] placeholder-bg-white bg-btn-secondary text-center outline-none  text-base16 " +
+          `xl:${btnWidth}`
         }
         placeholder={title}
       />
