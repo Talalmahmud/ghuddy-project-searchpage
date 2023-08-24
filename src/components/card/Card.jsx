@@ -9,11 +9,11 @@ import Image from "next/image";
 const Card = ({ item }) => {
   return (
     <>
-      <div className=" h-[325px] lg:h-[152px] w-full lg:w-[677px] flex flex-col lg:flex-row bg-bg-primary rounded-md hover:shadow-cardShadow">
+      <div className="lg:h-[152px] w-full lg:w-[677px] flex flex-col md:flex-row  bg-bg-primary rounded-md hover:shadow-cardShadow">
         {/* Card image sliding section */}
         <CardSlider images={item.images} />
 
-        <div className=" flex w-[343px] lg:w-[387px] flex-col gap-[6px] p-[12px] h-[152px] ">
+        <div className=" flex w-[343px] md:w-[278px] lg:w-[387px] flex-col gap-[6px] p-[12px] h-full ">
           {/*title */}
           <div className=" flex h-[22px] w-full  justify-between items-center  py-[8px]">
             <p className=" w-[305px]  text-base16 font-medium text-txt-primary whitespace-normal block">

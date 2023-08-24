@@ -53,7 +53,7 @@ const CardImageSlider = ({ images }) => {
           <Image src="./assets/heart.svg" height={19} width={20} alt="" />
         </div>
         {/* left slider */}
-        <div className=" absolute top-[47%] left-1 cursor-pointer ">
+        <div className=" absolute top-[47%] left-4 cursor-pointer ">
           <div
             className=" flex justify-center hover:bg-white items-center bg-bg-white rounded-full h-[20px] w-[20px] "
             onClick={prevSlide}
@@ -62,7 +62,7 @@ const CardImageSlider = ({ images }) => {
           </div>
         </div>
         {/* right slider */}
-        <div className=" absolute top-[47%] right-1 cursor-pointer">
+        <div className=" absolute top-[47%] right-4 cursor-pointer">
           <div
             className=" flex justify-center hover:bg-white items-center bg-bg-white rounded-full h-[20px] w-[20px] "
             onClick={nextSlide}
